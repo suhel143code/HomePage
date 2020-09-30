@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SN</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="row clearfix">
+          <i class="fas fa-graduation-cap logo"></i>
+          <ul class="main-nav" id="check-class">
+            <li><a href="#">Start</a></li>
+            <li><a href="#">Browse</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+          <a href="#" class="mobile-icon" onclick="slideshow()"
+            ><i class="fas fa-bars"></i
+          ></a>
+        </div>
+      </nav>
+      <div class="main-content">
+        <h1>
+          Welcome to <span class="colorchange">My Learning</span>.<br />Learn
+          whatever you want
+        </h1>
+        <a href="#" class="btn btn-full">Enroll</a>
+        <a href="#" class="btn btn-half">Check Prices</a>
+      </div>
+    </header>
+
+    <script type="text/javascript">
+      function slideshow() {
+        let x = document.getElementById('check-class');
+        console.log(x.style.display);
+        if (x.style.display === 'none') {
+          x.style.display = 'block';
+        } else {
+          x.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>

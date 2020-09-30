@@ -1,0 +1,189 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  overflow: hidden;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.clearfix:after {
+  content: '';
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../images/pexels-photo-1714208.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.row {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.main-nav {
+  float: right;
+  margin-top: 20px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  list-style: none;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 90%;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.main-nav li a:hover {
+  border-bottom: 2px solid #bf55ec;
+}
+
+.main-content {
+  width: 1180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: #fff;
+  font-size: 150%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-top: 50px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: lighter;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full {
+  background-color: transparent;
+  color: #bf55ec;
+  margin-right: 15px;
+  border: 1px solid #bf55ec;
+}
+
+.btn-full:hover {
+  background-color: #fff;
+}
+
+.btn-half {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-half:hover {
+  background-color: #bf55ec;
+}
+
+.colorchange {
+  animation: titlechange 2s infinite;
+}
+
+@keyframes titlechange {
+  0% {
+    color: #bf55ec;
+  }
+  25% {
+    color: white;
+  }
+  50% {
+    color: #bf55ec;
+  }
+  75% {
+    /* color: white; */
+  }
+  100% {
+    color: #bf55ec;
+  }
+}
+
+.mobile-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1180px) {
+  .main-content {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  h1 {
+    font-size: 125%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 110%;
+  }
+  .main-nav {
+    display: none;
+  }
+  .mobile-icon {
+    display: block;
+    float: right;
+    background-color: #fff;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  .main-nav {
+    float: left;
+  }
+  .main-nav li {
+    /* float: left; */
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .btn-full {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 100%;
+  }
+}
